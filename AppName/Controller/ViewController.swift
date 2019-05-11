@@ -9,11 +9,22 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController {
+class MapViewController: UIViewController, MKMapViewDelegate {
 
+    // MARK: - Storyboard
+    
+    @IBOutlet weak var mapView: MKMapView!
+    
+    @IBAction func addReport(_ sender: UIButton) {
+        print("Add Report")
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        mapView.delegate = self
+        mapView.showsScale = true
     }
 
 }
