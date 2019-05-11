@@ -12,6 +12,7 @@
 		9A7F57BA228750640052A0CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7F57B8228750640052A0CF /* Main.storyboard */; };
 		9A7F57BC228750650052A0CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A7F57BB228750650052A0CF /* Assets.xcassets */; };
 		9A7F57BF228750650052A0CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7F57BD228750650052A0CF /* LaunchScreen.storyboard */; };
+		9A7F57CD228751D60052A0CF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7F57CC228751D60052A0CF /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9A7F57BB228750650052A0CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A7F57BE228750650052A0CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A7F57C0228750650052A0CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A7F57CC228751D60052A0CF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A7F57CD228751D60052A0CF /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				9A7F57B3228750640052A0CF /* AppName */,
 				9A7F57B2228750640052A0CF /* Products */,
+				9A7F57CB228751D60052A0CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +108,14 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		9A7F57CB228751D60052A0CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A7F57CC228751D60052A0CF /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,6 +148,11 @@
 				TargetAttributes = {
 					9A7F57B0228750640052A0CF = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
