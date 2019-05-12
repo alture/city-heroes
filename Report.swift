@@ -19,7 +19,9 @@ struct Report: CustomDebugStringConvertible, Codable {
     private(set) var description: String = ""
     private(set) var votes = 0
     private(set) var isSolved = false
-    
+    private(set) var longitude: Double = 0.0
+    private(set) var latitude: Double = 0.0
+
     var json: Data? {
         return try? JSONEncoder().encode(self)
     }
