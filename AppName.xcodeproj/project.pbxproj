@@ -10,9 +10,12 @@
 		0BE5FB3853663C4A99E2E737 /* Pods_AppName.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D68BFB0B35910DC4FA951F /* Pods_AppName.framework */; };
 		9A4D712522881B4600FCCB90 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4D712422881B4600FCCB90 /* Report.swift */; };
 		9A4D71292288262700FCCB90 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D71282288262700FCCB90 /* GoogleService-Info.plist */; };
+		9A4D712F228840CE00FCCB90 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4D712E228840CE00FCCB90 /* UIColor+Ext.swift */; };
+		9A4D71322288423400FCCB90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D71312288423400FCCB90 /* Assets.xcassets */; };
+		9A4D71362288A09A00FCCB90 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4D71352288A09A00FCCB90 /* CustomAnnotation.swift */; };
+		9A4D71382288A22000FCCB90 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4D71372288A22000FCCB90 /* CustomAnnotationView.swift */; };
 		9A7F57B5228750640052A0CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F57B4228750640052A0CF /* AppDelegate.swift */; };
 		9A7F57BA228750640052A0CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7F57B8228750640052A0CF /* Main.storyboard */; };
-		9A7F57BC228750650052A0CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A7F57BB228750650052A0CF /* Assets.xcassets */; };
 		9A7F57BF228750650052A0CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7F57BD228750650052A0CF /* LaunchScreen.storyboard */; };
 		9A7F57CD228751D60052A0CF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7F57CC228751D60052A0CF /* MapKit.framework */; };
 		9A7F57CF2287574D0052A0CF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F57CE2287574D0052A0CF /* MapViewController.swift */; };
@@ -22,10 +25,13 @@
 		27D68BFB0B35910DC4FA951F /* Pods_AppName.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppName.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4D712422881B4600FCCB90 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = SOURCE_ROOT; };
 		9A4D71282288262700FCCB90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9A4D712E228840CE00FCCB90 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		9A4D71312288423400FCCB90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A4D71352288A09A00FCCB90 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = SOURCE_ROOT; };
+		9A4D71372288A22000FCCB90 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = SOURCE_ROOT; };
 		9A7F57B1228750640052A0CF /* AppName.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppName.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7F57B4228750640052A0CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A7F57B9228750640052A0CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9A7F57BB228750650052A0CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A7F57BE228750650052A0CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A7F57C0228750650052A0CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A7F57CC228751D60052A0CF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -56,6 +62,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9A4D7130228840D300FCCB90 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9A4D712E228840CE00FCCB90 /* UIColor+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		9A7F57A8228750640052A0CF = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +91,7 @@
 		9A7F57B3228750640052A0CF /* AppName */ = {
 			isa = PBXGroup;
 			children = (
+				9A4D7130228840D300FCCB90 /* Extension */,
 				9A7F57CA228751560052A0CF /* Storyboard */,
 				9A7F57C92287514A0052A0CF /* Model */,
 				9A7F57C8228751460052A0CF /* View */,
@@ -91,8 +106,8 @@
 		9A7F57C6228751340052A0CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9A4D71312288423400FCCB90 /* Assets.xcassets */,
 				9A7F57B4228750640052A0CF /* AppDelegate.swift */,
-				9A7F57BB228750650052A0CF /* Assets.xcassets */,
 				9A7F57BD228750650052A0CF /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
@@ -109,6 +124,7 @@
 		9A7F57C8228751460052A0CF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9A4D71372288A22000FCCB90 /* CustomAnnotationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,6 +132,7 @@
 		9A7F57C92287514A0052A0CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9A4D71352288A09A00FCCB90 /* CustomAnnotation.swift */,
 				9A4D712422881B4600FCCB90 /* Report.swift */,
 			);
 			path = Model;
@@ -205,7 +222,7 @@
 			files = (
 				9A7F57BF228750650052A0CF /* LaunchScreen.storyboard in Resources */,
 				9A4D71292288262700FCCB90 /* GoogleService-Info.plist in Resources */,
-				9A7F57BC228750650052A0CF /* Assets.xcassets in Resources */,
+				9A4D71322288423400FCCB90 /* Assets.xcassets in Resources */,
 				9A7F57BA228750640052A0CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A7F57B5228750640052A0CF /* AppDelegate.swift in Sources */,
+				9A4D712F228840CE00FCCB90 /* UIColor+Ext.swift in Sources */,
+				9A4D71362288A09A00FCCB90 /* CustomAnnotation.swift in Sources */,
 				9A7F57CF2287574D0052A0CF /* MapViewController.swift in Sources */,
+				9A4D71382288A22000FCCB90 /* CustomAnnotationView.swift in Sources */,
 				9A4D712522881B4600FCCB90 /* Report.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,10 +22,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0T-aI-81J">
-                                <rect key="frame" x="304" y="772" width="70" height="70"/>
+                                <rect key="frame" x="294" y="762" width="80" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="gFc-Gc-opj"/>
-                                    <constraint firstAttribute="width" constant="70" id="vfm-VB-Vf1"/>
+                                    <constraint firstAttribute="height" constant="80" id="gFc-Gc-opj"/>
+                                    <constraint firstAttribute="width" constant="80" id="vfm-VB-Vf1"/>
                                 </constraints>
                                 <state key="normal" image="plus">
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -35,15 +35,14 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xUe-qC-ZKB">
-                                <rect key="frame" x="63.5" y="62" width="287" height="29"/>
+                                <rect key="frame" x="99.5" y="62" width="215" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
-                                    <segment title="My"/>
                                     <segment title="Solved"/>
                                     <segment title="Unsolved"/>
                                     <segment title="All"/>
                                 </segments>
-                                <color key="tintColor" red="0.52156862745098043" green="0.76078431372549016" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.40348675847053528" green="0.67849051952362061" blue="0.35680067539215088" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <action selector="changeSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="5WT-5B-Oi9"/>
                                 </connections>
