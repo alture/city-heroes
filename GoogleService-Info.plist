@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>923709104247-0gs63d9f4fqkk2nk86pr905lvvuipkt0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.923709104247-0gs63d9f4fqkk2nk86pr905lvvuipkt0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA3mnjDI7bt-0r4tNwv_cBn3Imuq0VZn_E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>923709104247</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Mr.Oshka.AppName</string>
+	<key>PROJECT_ID</key>
+	<string>city-heroes-fe049</string>
+	<key>STORAGE_BUCKET</key>
+	<string>city-heroes-fe049.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:923709104247:ios:0fa8008c4c679ded</string>
+	<key>DATABASE_URL</key>
+	<string>https://city-heroes-fe049.firebaseio.com</string>
+</dict>
+</plist>
