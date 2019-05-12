@@ -9,18 +9,13 @@
 import Foundation
 
 struct Report: CustomDebugStringConvertible, Codable {
-    
-    enum Category: Int, Codable {
-        case first = 1, second, third
-    }
-    
-    private(set) var category: Category
     private(set) var imageURLs = [URL]()
+    private(set) var title: String = ""
     private(set) var description: String = ""
     private(set) var votes = 0
     private(set) var isSolved = false
-    private(set) var longitude: Double = 0.0
-    private(set) var latitude: Double = 0.0
+    var longitude: Double = 0.0
+    var latitude: Double = 0.0
 
     var json: Data? {
         return try? JSONEncoder().encode(self)
@@ -38,8 +33,8 @@ struct Report: CustomDebugStringConvertible, Codable {
         isSolved = true
     }
     
-    init(category: Category, imageURLs: [URL], description: String) {
-        self.category = category
+    init(imageURLs: [URL], title: String, description: String) {
+        self.title = title
         self.imageURLs = imageURLs
         self.description = description
     }
@@ -53,7 +48,7 @@ struct Report: CustomDebugStringConvertible, Codable {
     }
     
     var debugDescription: String {
-        return "imageURLs: \(imageURLs), description: \(description), votes: \(votes), isSolved: \(isSolved)"
+        return "imageURLs: \(imageURLs), title: \(title), description: \(description), votes: \(votes), isSolved: \(isSolved)"
     }
     
 }
