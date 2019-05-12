@@ -12,6 +12,19 @@ import MapKit
 class MapViewController: UIViewController {
     
     let locationManager = CLLocationManager()
+    
+    // MARK: - Model
+    
+    var myReports = [Report]()
+    var allReports = [Report]()
+    
+    var getSolvedReports: [Report] {
+        return allReports.filter { $0.isSolved }
+    }
+    
+    var getUnsolvedReports: [Report] {
+        return allReports.filter { !$0.isSolved }
+    }
 
     // MARK: - Storyboard
     
